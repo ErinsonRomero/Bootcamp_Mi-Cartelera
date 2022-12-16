@@ -10,13 +10,14 @@ import Foundation
 protocol InicioTopsInteractorProtocol {
     func getSerie(_ tipo: String)
     func setSerie(_ resultados: [Results])
+    func searchView()
 
 }
 
 class InicioTopsInteractor {
     var presenter: InicioTopsPresenterProtocol?
     var inicioTopsSeriesManager = InicioTopsSeries()
-    
+    var router: InicioTopsRouterProtocol?
      
     
 }
@@ -26,6 +27,7 @@ extension InicioTopsInteractor: InicioTopsInteractorProtocol{
     func getSerie(_ tipo: String) {
         inicioTopsSeriesManager.delegate = self
         inicioTopsSeriesManager.Tipo(tipo: tipo)
+        
     }
     
     func setSerie(_ resultados: [Results]) {
@@ -42,6 +44,10 @@ extension InicioTopsInteractor: InicioTopsSeriesDelegate {
     
     func didFailWithError(error: Error) {
         
+    }
+    
+    func searchView() {
+        router?.buscarSerie()
     }
     
 }

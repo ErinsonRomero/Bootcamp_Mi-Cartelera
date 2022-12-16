@@ -27,6 +27,10 @@ class InicioTopsViewController: UIViewController {
         InicioTopsConfigurator.inicioTopsConfiguratorModulo(self)
         presenter?.getSerie("tv/popular")
     }
+    
+    @IBAction func searchButton(_ sender: Any) {
+        presenter?.searchView()
+    }
 
 
 }
@@ -44,6 +48,10 @@ extension InicioTopsViewController: UICollectionViewDelegate, UICollectionViewDa
             cell.topsImageView.downloaded(from: imagen)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.ShowSerie(series![indexPath.row])
     }
     
     
