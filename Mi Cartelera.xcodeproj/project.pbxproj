@@ -16,6 +16,8 @@
 		9E42AF31294CC28500E70ACB /* BusquedaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF30294CC28500E70ACB /* BusquedaModelo.swift */; };
 		9E42AF33294CC2CA00E70ACB /* BusquedaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF32294CC2CA00E70ACB /* BusquedaRouter.swift */; };
 		9E42AF35294CC4FC00E70ACB /* InicioTopsModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */; };
+		9E42AF38294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */; };
+		9E42AF39294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */; };
 		9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B45294C1A9900B21D3B /* AppDelegate.swift */; };
 		9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B47294C1A9900B21D3B /* SceneDelegate.swift */; };
 		9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */; };
@@ -47,6 +49,8 @@
 		9E42AF30294CC28500E70ACB /* BusquedaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaModelo.swift; sourceTree = "<group>"; };
 		9E42AF32294CC2CA00E70ACB /* BusquedaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaRouter.swift; sourceTree = "<group>"; };
 		9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsModelo.swift; sourceTree = "<group>"; };
+		9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9E612B42294C1A9900B21D3B /* Mi Cartelera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Cartelera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E612B45294C1A9900B21D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E612B47294C1A9900B21D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 			path = Mostrar;
 			sourceTree = "<group>";
 		};
+		9E42AF3A294CC81000E70ACB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */,
+				9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		9E612B39294C1A9900B21D3B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +126,7 @@
 			children = (
 				9E612B45294C1A9900B21D3B /* AppDelegate.swift */,
 				9E612B47294C1A9900B21D3B /* SceneDelegate.swift */,
+				9E42AF3A294CC81000E70ACB /* CoreData */,
 				9E612B5C294C1D5200B21D3B /* InicioTops */,
 				9E612B6B294C341200B21D3B /* Busqueda */,
 				9E42AF27294CBF8A00E70ACB /* Mostrar */,
@@ -249,9 +263,11 @@
 				9E612B60294C29F000B21D3B /* InicioTopsSeriesApi.swift in Sources */,
 				9E612B6F294C34A400B21D3B /* BusquedaTableViewCell.swift in Sources */,
 				9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */,
+				9E42AF38294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift in Sources */,
 				9E612B66294C2D4B00B21D3B /* InicioTopsPresenter.swift in Sources */,
 				9E42AF24294CB01800E70ACB /* BusquedaSeriesApi.swift in Sources */,
 				9E612B6A294C2E7400B21D3B /* InicioTopsConfigurator.swift in Sources */,
+				9E42AF39294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift in Sources */,
 				9E42AF29294CBFAA00E70ACB /* MostrandoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
