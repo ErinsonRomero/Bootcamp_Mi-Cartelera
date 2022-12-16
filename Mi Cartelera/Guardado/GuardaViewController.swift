@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol GuardaViewControllerProtocol {
+    func MandarGuardados(_ seriesGuardadas: [SeriesGuardadas])
+}
+
 class GuardaViewController: UIViewController {
     //
     //  GuardadoViewController.swift
@@ -19,12 +23,16 @@ class GuardaViewController: UIViewController {
 
     @IBOutlet weak var guardaTableView: UITableView!
     
+    var listaSeries = [SeriesGuardadas]()
+    var presenter: GuardaPresenterProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         guardaTableView.delegate = self
         guardaTableView.dataSource = self
         title = "Para ver mas tarde"
+        presenter?.getSerie()
         
     }
     
@@ -33,13 +41,25 @@ class GuardaViewController: UIViewController {
 extension GuardaViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return listaSeries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = guardaTableView.dequeueReusableCell(withIdentifier: "GuardadoTableViewCell", for: indexPath) as! GuardaTableViewCell
+        cell.guartaTituloLabel.text = listaSeries[indexPath.row].nombreSerie
+        if let image = listaSeries[indexPath.row].imagenUrl {
+            cell.guardaSerieImageView.downloaded(from: image)
+        }
         return cell
     }
       
+}
+
+extension GuardaViewController: GuardaViewControllerProtocol {
+    func MandarGuardados(_ seriesGuardadas: [SeriesGuardadas]) {
+        self.listaSeries = seriesGuardadas
+        guardaTableView.reloadData()
+    }
+    
 }
