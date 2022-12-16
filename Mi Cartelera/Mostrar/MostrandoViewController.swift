@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 protocol MostrandoViewControllerProtocol {
-    
+    func EstaEnGuardados(_ esta: Bool)
 }
 
 class MostrandoViewController: UIViewController {
@@ -29,7 +29,7 @@ class MostrandoViewController: UIViewController {
         }
         serieTramaLabel.text = presenter?.getOverview()
         puntajeLabel.text = "\(presenter!.getVote())/10"
-
+        presenter?.PedirEstadoGuardados(presenter!.getId())
 
     }
     @IBAction func addSerie(_ sender: UIBarButtonItem) {
@@ -39,5 +39,9 @@ class MostrandoViewController: UIViewController {
 }
 
 extension MostrandoViewController: MostrandoViewControllerProtocol {
+    func EstaEnGuardados(_ esta: Bool) {
+        BotonGuardar.isHidden = esta
+    }
+    
        
 }

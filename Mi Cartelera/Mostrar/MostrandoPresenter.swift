@@ -14,6 +14,8 @@ protocol MostrandoPresenterProtocol {
     func getVote() -> Float
     
     func getSerie(_ nombre: String, _ imagen: String?, _ trama: String, _ voto: Float, _ id: String)
+    func setGuardada(_ guardada: Bool)
+    func PedirEstadoGuardados(_ nombre: String)
 }
 
 
@@ -41,6 +43,10 @@ class MostrandoPresenter {
 }
     
 extension MostrandoPresenter: MostrandoPresenterProtocol {
+    func PedirEstadoGuardados(_ nombre: String) {
+        interactor?.PedirEstadoGuardados(nombre)
+    }
+    
  
     func getSerie(_ nombre: String, _ imagen: String?, _ trama: String, _ voto: Float, _ id: String) {
         interactor?.saveSerie(nombre, imagen, trama, voto, id)
@@ -64,6 +70,10 @@ extension MostrandoPresenter: MostrandoPresenterProtocol {
     }
     func getVote() -> Float {
         vote
+    }
+    
+    func setGuardada(_ guardada: Bool) {
+        view?.EstaEnGuardados(guardada)
     }
     
     
