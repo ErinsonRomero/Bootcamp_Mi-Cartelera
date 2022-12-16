@@ -9,6 +9,7 @@ import UIKit
 
 protocol BusquedaViewControllerProtocol {
     func MostrarSerie(_ name: [Results])
+    func showSerie(_ serie: Results)
 }
 
 class BusquedaViewController: UIViewController {
@@ -57,6 +58,11 @@ extension BusquedaViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.showSerie(busquedaSeries[indexPath.row])
+    }
+
+    
     
 }
 
@@ -74,11 +80,17 @@ extension BusquedaViewController: UISearchResultsUpdating {
 
 
 extension BusquedaViewController: BusquedaViewControllerProtocol {
+
+    
     func MostrarSerie(_ name: [Results]) {
         DispatchQueue.main.async {
             self.busquedaSeries = name
             self.busquedaTableview.reloadData()
         }
         
+    }
+    
+    func showSerie(_ serie: Results) {
+        presenter?.showSerie(serie)
     }
 }
