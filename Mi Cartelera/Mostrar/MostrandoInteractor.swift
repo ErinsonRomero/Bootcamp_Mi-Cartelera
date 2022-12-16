@@ -12,6 +12,7 @@ import UIKit
 protocol MostrandoInteractorProtocol {
     func saveSerie(_ nombre: String, _ imagen: String?, _ trama: String, _ voto: Float, _ id: String)
     func setGuardada(_ guardada: Bool)
+    func PedirEstadoGuardados(_ nombre: String)
 }
 
 class MostrandoInteractor {
@@ -25,6 +26,14 @@ class MostrandoInteractor {
             
         } catch {}
     }
+    
+    func fetchSeriesGuardadas() {
+        do {
+            self.items = try context.fetch(SeriesGuardadas.fetchRequest())
+            
+        } catch {}
+    }
+    
 
 }
 
@@ -37,11 +46,22 @@ extension MostrandoInteractor: MostrandoInteractorProtocol{
         newSerie.voteSerie = voto
         newSerie.idSerie = id
         saveSeriesGuardadas(newSerie)
-        print("SE GUARDO SERIE \(newSerie.nombreSerie)")
+
     }
     
     func setGuardada(_ guardada: Bool) {
-        
+        presenter?.setGuardada(guardada)
+    }
+    
+    func PedirEstadoGuardados(_ nombre: String) {
+        fetchSeriesGuardadas()
+        if let item = items {
+            for i in item {
+                if i.idSerie == nombre {
+                    self.setGuardada(true)
+                }
+            }
+        }
     }
     
 }
