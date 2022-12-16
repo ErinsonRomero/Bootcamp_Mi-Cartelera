@@ -50,6 +50,10 @@ extension InicioTopsViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.ShowSerie(series![indexPath.row])
+    }
+    
     
 }
 

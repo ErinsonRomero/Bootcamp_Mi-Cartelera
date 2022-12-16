@@ -13,6 +13,7 @@ protocol InicioTopsPresenterProtocol {
     //regreso serie
     func setSerie(_ resultados: [Results])
     func searchView()
+    func ShowSerie(_ serie: Results)
 }
 
 class InicioTopsPresenter {
@@ -35,6 +36,10 @@ extension InicioTopsPresenter: InicioTopsPresenterProtocol{
     
     func searchView() {
         router?.buscarSerie()
+    }
+    
+    func ShowSerie(_ serie: Results) {
+        router?.showSerie(serie)
     }
 
 }
