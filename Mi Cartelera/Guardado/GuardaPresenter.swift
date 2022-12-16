@@ -12,7 +12,7 @@ protocol GuardaPresenterProtocol {
     func getSerie()
     //regreso serie
     func setSerie(_ seriesGuardadas: [SeriesGuardadas])
-
+    func removerSerie(_ serie: SeriesGuardadas)
 }
 
 
@@ -41,6 +41,9 @@ extension GuardaPresenter: GuardaPresenterProtocol {
         interactor?.getSerie()
     }
     
+    func removerSerie(_ serie: SeriesGuardadas) {
+        interactor?.RemoverSerie(serie)
+    }
 
     
 }

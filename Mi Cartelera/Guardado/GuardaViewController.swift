@@ -53,6 +53,13 @@ extension GuardaViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let borrar = UIContextualAction(style: .destructive, title: "Borrar") {(action, view, completionHandler) in
+            let serieRemovida = self.listaSeries[indexPath.row]
+            self.presenter?.removerSerie(serieRemovida)
+        }
+        return UISwipeActionsConfiguration(actions: [borrar])
+    }
       
 }
 
@@ -61,5 +68,4 @@ extension GuardaViewController: GuardaViewControllerProtocol {
         self.listaSeries = seriesGuardadas
         guardaTableView.reloadData()
     }
-    
 }

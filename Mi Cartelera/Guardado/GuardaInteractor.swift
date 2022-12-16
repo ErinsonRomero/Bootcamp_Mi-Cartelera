@@ -12,7 +12,7 @@ import UIKit
 protocol GuardaInteractorProtocol {
     func getSerie()
     func setSerie(_ seriesGuardadas: [SeriesGuardadas])
-
+    func RemoverSerie(_ serieRemovida: SeriesGuardadas)
 }
 
 class GuardaInteractor {
@@ -47,6 +47,12 @@ extension GuardaInteractor: GuardaInteractorProtocol{
     func setSerie(_ seriesGuardadas: [SeriesGuardadas]) {
         presenter?.setSerie(seriesGuardadas)
         
+    }
+    
+    func RemoverSerie(_ serieRemovida: SeriesGuardadas) {
+        self.context.delete(serieRemovida)
+        saveSeriesGuardadas()
+        fetchSeriesGuardadas()
     }
     
     
