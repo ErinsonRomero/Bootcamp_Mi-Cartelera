@@ -51,6 +51,9 @@ extension BusquedaViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = busquedaTableview.dequeueReusableCell(withIdentifier: "BusquedaTableViewCell", for: indexPath) as! BusquedaTableViewCell
         cell.busquedaTituloLabel.text = busquedaSeries[indexPath.row].name
+        if let imagen = busquedaSeries[indexPath.row].poster_path {
+            cell.busquedaImagenImageView.downloaded(from: imagen)
+        }
         return cell
     }
     
@@ -61,6 +64,10 @@ extension BusquedaViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if let text = searchController.searchBar.text {
             self.presenter?.getSerie(text)
+        }
+        if searchController.searchBar.text == "" {
+            busquedaSeries = []
+            busquedaTableview.reloadData()
         }
     }
 }
