@@ -31,7 +31,9 @@ class InicioTopsViewController: UIViewController {
     @IBAction func searchButton(_ sender: Any) {
         presenter?.searchView()
     }
-
+    @IBAction func guardadosButton(_ sender: Any) {
+        presenter?.guardadosView()
+    }
 
 }
 
@@ -48,6 +50,10 @@ extension InicioTopsViewController: UICollectionViewDelegate, UICollectionViewDa
             cell.topsImageView.downloaded(from: imagen)
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.ShowSerie(series![indexPath.row])
     }
     
     
