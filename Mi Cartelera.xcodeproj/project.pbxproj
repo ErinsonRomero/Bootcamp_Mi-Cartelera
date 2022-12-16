@@ -14,6 +14,7 @@
 		9E612B50294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B4E294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld */; };
 		9E612B52294C1A9900B21D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E612B51294C1A9900B21D3B /* Assets.xcassets */; };
 		9E612B55294C1A9900B21D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E612B53294C1A9900B21D3B /* LaunchScreen.storyboard */; };
+		9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B5D294C23F200B21D3B /* InicioTopsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9E612B51294C1A9900B21D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E612B54294C1A9900B21D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E612B56294C1A9900B21D3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E612B5D294C23F200B21D3B /* InicioTopsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */,
+				9E612B5D294C23F200B21D3B /* InicioTopsCollectionViewCell.swift */,
 			);
 			path = InicioTops;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */,
 				9E612B50294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld in Sources */,
+				9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */,
 				9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */,
 				9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */,
 			);
