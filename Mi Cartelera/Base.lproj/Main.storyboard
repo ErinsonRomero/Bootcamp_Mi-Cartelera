@@ -324,6 +324,83 @@
             </objects>
             <point key="canvasLocation" x="1714" y="-48"/>
         </scene>
+        <!--Guarda View Controller-->
+        <scene sceneID="MxB-IN-VCf">
+            <objects>
+                <viewController storyboardIdentifier="GuardaViewController" id="sTt-Yl-Ctc" customClass="GuardaViewController" customModule="MiCartelera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9HN-rR-mXR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UTr-0y-a1J">
+                                <rect key="frame" x="20" y="69" width="353" height="749"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4H4-gf-k9R">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="749"/>
+                                        <color key="backgroundColor" name="Fondo"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GuardadoTableViewCell" rowHeight="146" id="6dg-12-Jf4" customClass="GuardaTableViewCell" customModule="MiCartelera" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="353" height="146"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6dg-12-Jf4" id="Ktt-F3-DTM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="146"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzK-UY-6UA">
+                                                            <rect key="frame" x="135" y="63.000000000000007" width="41.333333333333343" height="20.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SinImagen" translatesAutoresizingMaskIntoConstraints="NO" id="SpW-Y9-Fo3">
+                                                            <rect key="frame" x="20" y="11" width="99" height="124"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="124" id="7MV-wk-716"/>
+                                                                <constraint firstAttribute="width" constant="99" id="xOY-PK-yVS"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YzK-UY-6UA" secondAttribute="trailing" constant="20" symbolic="YES" id="1H6-mJ-F5a"/>
+                                                        <constraint firstItem="YzK-UY-6UA" firstAttribute="leading" secondItem="SpW-Y9-Fo3" secondAttribute="trailing" constant="16" id="30q-Zx-wHe"/>
+                                                        <constraint firstItem="SpW-Y9-Fo3" firstAttribute="leading" secondItem="Ktt-F3-DTM" secondAttribute="leadingMargin" id="aXk-pn-HY9"/>
+                                                        <constraint firstItem="YzK-UY-6UA" firstAttribute="top" secondItem="Ktt-F3-DTM" secondAttribute="topMargin" constant="52" id="bBW-YN-xdE"/>
+                                                        <constraint firstItem="SpW-Y9-Fo3" firstAttribute="top" secondItem="Ktt-F3-DTM" secondAttribute="topMargin" id="hwp-QJ-b0K"/>
+                                                        <constraint firstItem="SpW-Y9-Fo3" firstAttribute="bottom" secondItem="Ktt-F3-DTM" secondAttribute="bottomMargin" id="x7r-O2-Jg8"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" name="Fondo"/>
+                                                <color key="tintColor" name="Fondo"/>
+                                                <connections>
+                                                    <outlet property="guardaSerieImageView" destination="SpW-Y9-Fo3" id="3dJ-gX-F02"/>
+                                                    <outlet property="guartaTituloLabel" destination="YzK-UY-6UA" id="PtX-v9-PKj"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" name="Fondo"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J0D-f9-J7q"/>
+                        <color key="backgroundColor" name="Fondo"/>
+                        <constraints>
+                            <constraint firstItem="UTr-0y-a1J" firstAttribute="top" secondItem="J0D-f9-J7q" secondAttribute="top" constant="10" id="TiI-as-iAR"/>
+                            <constraint firstItem="UTr-0y-a1J" firstAttribute="bottom" secondItem="J0D-f9-J7q" secondAttribute="bottom" id="VHQ-23-es5"/>
+                            <constraint firstItem="UTr-0y-a1J" firstAttribute="leading" secondItem="J0D-f9-J7q" secondAttribute="leading" constant="20" id="WjG-Ev-jel"/>
+                            <constraint firstItem="UTr-0y-a1J" firstAttribute="trailing" secondItem="J0D-f9-J7q" secondAttribute="trailing" constant="-20" id="yeY-dr-UE4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="agu-ha-Nlu"/>
+                    <navigationItem key="navigationItem" id="fyL-vh-RtX"/>
+                    <connections>
+                        <outlet property="guardaTableView" destination="4H4-gf-k9R" id="P8O-ws-xKo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uue-gy-B5K" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="501"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SinImagen" width="681" height="528"/>

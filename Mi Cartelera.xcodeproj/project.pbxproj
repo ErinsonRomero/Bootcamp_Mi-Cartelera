@@ -18,6 +18,9 @@
 		9E42AF35294CC4FC00E70ACB /* InicioTopsModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */; };
 		9E42AF38294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */; };
 		9E42AF39294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */; };
+		9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */; };
+		9E42AF3F294CCA8100E70ACB /* GuardaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */; };
+		9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */; };
 		9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B45294C1A9900B21D3B /* AppDelegate.swift */; };
 		9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B47294C1A9900B21D3B /* SceneDelegate.swift */; };
 		9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */; };
@@ -51,6 +54,9 @@
 		9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsModelo.swift; sourceTree = "<group>"; };
 		9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaViewController.swift; sourceTree = "<group>"; };
+		9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaTableViewCell.swift; sourceTree = "<group>"; };
+		9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaConfigurator.swift; sourceTree = "<group>"; };
 		9E612B42294C1A9900B21D3B /* Mi Cartelera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Cartelera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E612B45294C1A9900B21D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E612B47294C1A9900B21D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,16 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		9E42AF3B294CC96100E70ACB /* Guardado */ = {
+			isa = PBXGroup;
+			children = (
+				9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */,
+				9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */,
+				9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */,
+			);
+			path = Guardado;
+			sourceTree = "<group>";
+		};
 		9E612B39294C1A9900B21D3B = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +146,7 @@
 				9E612B5C294C1D5200B21D3B /* InicioTops */,
 				9E612B6B294C341200B21D3B /* Busqueda */,
 				9E42AF27294CBF8A00E70ACB /* Mostrar */,
+				9E42AF3B294CC96100E70ACB /* Guardado */,
 				9E612B4B294C1A9900B21D3B /* Main.storyboard */,
 				9E612B51294C1A9900B21D3B /* Assets.xcassets */,
 				9E612B53294C1A9900B21D3B /* LaunchScreen.storyboard */,
@@ -254,8 +271,11 @@
 				9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */,
 				9E8FEAA8294CA82C004AC2E3 /* BusquedaConfigurator.swift in Sources */,
 				9E42AF33294CC2CA00E70ACB /* BusquedaRouter.swift in Sources */,
+				9E42AF3F294CCA8100E70ACB /* GuardaTableViewCell.swift in Sources */,
+				9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */,
 				9E8FEAA6294CA78C004AC2E3 /* InicioTopsRouter.swift in Sources */,
 				9E42AF26294CB08100E70ACB /* BusquedaInteractor.swift in Sources */,
+				9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */,
 				9E42AF2D294CC1A500E70ACB /* MostrandoConfigurator.swift in Sources */,
 				9E612B62294C2A2800B21D3B /* UltimosData.swift in Sources */,
 				9E612B68294C2D7800B21D3B /* InicioTopsInteractor.swift in Sources */,

@@ -14,6 +14,7 @@ protocol InicioTopsPresenterProtocol {
     func setSerie(_ resultados: [Results])
     func searchView()
     func ShowSerie(_ serie: Results)
+    func guardadosView() 
 }
 
 class InicioTopsPresenter {
@@ -40,6 +41,10 @@ extension InicioTopsPresenter: InicioTopsPresenterProtocol{
     
     func ShowSerie(_ serie: Results) {
         router?.showSerie(serie)
+    }
+    
+    func guardadosView() {
+        router?.guardadosView()
     }
 
 }

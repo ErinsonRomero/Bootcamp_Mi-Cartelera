@@ -31,7 +31,9 @@ class InicioTopsViewController: UIViewController {
     @IBAction func searchButton(_ sender: Any) {
         presenter?.searchView()
     }
-
+    @IBAction func guardadosButton(_ sender: Any) {
+        presenter?.guardadosView()
+    }
 
 }
 
