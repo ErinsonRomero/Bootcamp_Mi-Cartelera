@@ -27,6 +27,10 @@ class InicioTopsViewController: UIViewController {
         InicioTopsConfigurator.inicioTopsConfiguratorModulo(self)
         presenter?.getSerie("tv/popular")
     }
+    
+    @IBAction func searchButton(_ sender: Any) {
+        presenter?.searchView()
+    }
 
 
 }

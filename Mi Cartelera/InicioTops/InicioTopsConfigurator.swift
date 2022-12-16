@@ -10,7 +10,9 @@ class InicioTopsConfigurator {
     static func inicioTopsConfiguratorModulo (_ view: InicioTopsViewController) {
         let presenter = InicioTopsPresenter()
         let interactor = InicioTopsInteractor()
-
+        let router = InicioTopsRouter()
+        router.view = view
+        presenter.router = router
         presenter.interactor = interactor
         
         presenter.view = view

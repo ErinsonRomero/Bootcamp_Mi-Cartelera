@@ -21,6 +21,11 @@
 		9E612B66294C2D4B00B21D3B /* InicioTopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B65294C2D4B00B21D3B /* InicioTopsPresenter.swift */; };
 		9E612B68294C2D7800B21D3B /* InicioTopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B67294C2D7800B21D3B /* InicioTopsInteractor.swift */; };
 		9E612B6A294C2E7400B21D3B /* InicioTopsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B69294C2E7400B21D3B /* InicioTopsConfigurator.swift */; };
+		9E612B6D294C343C00B21D3B /* BusquedaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B6C294C343C00B21D3B /* BusquedaViewController.swift */; };
+		9E612B6F294C34A400B21D3B /* BusquedaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B6E294C34A400B21D3B /* BusquedaTableViewCell.swift */; };
+		9E8FEAA6294CA78C004AC2E3 /* InicioTopsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FEAA5294CA78C004AC2E3 /* InicioTopsRouter.swift */; };
+		9E8FEAA8294CA82C004AC2E3 /* BusquedaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FEAA7294CA82C004AC2E3 /* BusquedaConfigurator.swift */; };
+		9E8FEAAA294CA86D004AC2E3 /* BusquedaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FEAA9294CA86D004AC2E3 /* BusquedaPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		9E612B65294C2D4B00B21D3B /* InicioTopsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsPresenter.swift; sourceTree = "<group>"; };
 		9E612B67294C2D7800B21D3B /* InicioTopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsInteractor.swift; sourceTree = "<group>"; };
 		9E612B69294C2E7400B21D3B /* InicioTopsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsConfigurator.swift; sourceTree = "<group>"; };
+		9E612B6C294C343C00B21D3B /* BusquedaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaViewController.swift; sourceTree = "<group>"; };
+		9E612B6E294C34A400B21D3B /* BusquedaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaTableViewCell.swift; sourceTree = "<group>"; };
+		9E8FEAA5294CA78C004AC2E3 /* InicioTopsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsRouter.swift; sourceTree = "<group>"; };
+		9E8FEAA7294CA82C004AC2E3 /* BusquedaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaConfigurator.swift; sourceTree = "<group>"; };
+		9E8FEAA9294CA86D004AC2E3 /* BusquedaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 				9E612B45294C1A9900B21D3B /* AppDelegate.swift */,
 				9E612B47294C1A9900B21D3B /* SceneDelegate.swift */,
 				9E612B5C294C1D5200B21D3B /* InicioTops */,
+				9E612B6B294C341200B21D3B /* Busqueda */,
 				9E612B4B294C1A9900B21D3B /* Main.storyboard */,
 				9E612B51294C1A9900B21D3B /* Assets.xcassets */,
 				9E612B53294C1A9900B21D3B /* LaunchScreen.storyboard */,
@@ -95,8 +106,20 @@
 				9E612B65294C2D4B00B21D3B /* InicioTopsPresenter.swift */,
 				9E612B67294C2D7800B21D3B /* InicioTopsInteractor.swift */,
 				9E612B69294C2E7400B21D3B /* InicioTopsConfigurator.swift */,
+				9E8FEAA5294CA78C004AC2E3 /* InicioTopsRouter.swift */,
 			);
 			path = InicioTops;
+			sourceTree = "<group>";
+		};
+		9E612B6B294C341200B21D3B /* Busqueda */ = {
+			isa = PBXGroup;
+			children = (
+				9E612B6C294C343C00B21D3B /* BusquedaViewController.swift */,
+				9E612B6E294C34A400B21D3B /* BusquedaTableViewCell.swift */,
+				9E8FEAA7294CA82C004AC2E3 /* BusquedaConfigurator.swift */,
+				9E8FEAA9294CA86D004AC2E3 /* BusquedaPresenter.swift */,
+			);
+			path = Busqueda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,14 +193,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E612B6D294C343C00B21D3B /* BusquedaViewController.swift in Sources */,
 				9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */,
 				9E612B50294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld in Sources */,
 				9E612B64294C2B8900B21D3B /* Imagenes.swift in Sources */,
+				9E8FEAAA294CA86D004AC2E3 /* BusquedaPresenter.swift in Sources */,
 				9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */,
+				9E8FEAA8294CA82C004AC2E3 /* BusquedaConfigurator.swift in Sources */,
+				9E8FEAA6294CA78C004AC2E3 /* InicioTopsRouter.swift in Sources */,
 				9E612B62294C2A2800B21D3B /* UltimosData.swift in Sources */,
 				9E612B68294C2D7800B21D3B /* InicioTopsInteractor.swift in Sources */,
 				9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */,
 				9E612B60294C29F000B21D3B /* InicioTopsSeriesApi.swift in Sources */,
+				9E612B6F294C34A400B21D3B /* BusquedaTableViewCell.swift in Sources */,
 				9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */,
 				9E612B66294C2D4B00B21D3B /* InicioTopsPresenter.swift in Sources */,
 				9E612B6A294C2E7400B21D3B /* InicioTopsConfigurator.swift in Sources */,
