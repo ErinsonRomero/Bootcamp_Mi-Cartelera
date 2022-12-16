@@ -12,7 +12,19 @@ class GuardaConfigurator {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "GuardaViewController") as! GuardaViewController
-       
+        let presenter = GuardaPresenter()
+        let interactor = GuardaInteractor()
+        
+        
+        presenter.interactor = interactor
+        
+        presenter.view = view
+        
+        
+        interactor.presenter = presenter
+        
+        view.presenter = presenter
+        
         return view
     }
 }
