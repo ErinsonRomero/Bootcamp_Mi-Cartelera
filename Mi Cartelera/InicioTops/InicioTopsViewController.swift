@@ -7,9 +7,15 @@
 
 import UIKit
 
+
+protocol InicioTopsViewProtocol {
+    func MostrarSerie(_ name: [Results])
+}
+
 class InicioTopsViewController: UIViewController {
     @IBOutlet weak var InicioTopsCollection: UICollectionView!
     
+    var presenter: InicioTopsPresenterProtocol?
     var inicioTopsSeriesManager = InicioTopsSeries()
     var series: [Results]?
     override func viewDidLoad() {
@@ -18,8 +24,8 @@ class InicioTopsViewController: UIViewController {
         InicioTopsCollection.delegate = self
         InicioTopsCollection.dataSource = self
         title = "Series Populares"
-        inicioTopsSeriesManager.delegate = self
-        inicioTopsSeriesManager.Tipo(tipo: "tv/popular")
+        InicioTopsConfigurator.inicioTopsConfiguratorModulo(self)
+        presenter?.getSerie("tv/popular")
     }
 
 
@@ -43,20 +49,13 @@ extension InicioTopsViewController: UICollectionViewDelegate, UICollectionViewDa
     
 }
 
-extension InicioTopsViewController: InicioTopsSeriesDelegate {
-    func didUpdateSerie(movie: [Results]) {
+extension InicioTopsViewController: InicioTopsViewProtocol {
+    func MostrarSerie(_ name: [Results]) {
         DispatchQueue.main.async {
-            self.series = movie
+            self.series = name
             self.InicioTopsCollection.reloadData()
         }
-    
-        
     }
-    
-    func didFailWithError(error: Error) {
-        
-    }
-    
-    
 }
+
 
