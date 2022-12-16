@@ -21,6 +21,7 @@
 		9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */; };
 		9E42AF3F294CCA8100E70ACB /* GuardaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */; };
 		9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */; };
+		9E42AF43294CCEFE00E70ACB /* MostrandoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */; };
 		9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B45294C1A9900B21D3B /* AppDelegate.swift */; };
 		9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B47294C1A9900B21D3B /* SceneDelegate.swift */; };
 		9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */; };
@@ -57,6 +58,7 @@
 		9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaViewController.swift; sourceTree = "<group>"; };
 		9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaTableViewCell.swift; sourceTree = "<group>"; };
 		9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaConfigurator.swift; sourceTree = "<group>"; };
+		9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrandoInteractor.swift; sourceTree = "<group>"; };
 		9E612B42294C1A9900B21D3B /* Mi Cartelera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Cartelera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E612B45294C1A9900B21D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E612B47294C1A9900B21D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				9E42AF2A294CC0D300E70ACB /* MostrandoPresenter.swift */,
 				9E42AF2C294CC1A500E70ACB /* MostrandoConfigurator.swift */,
 				9E42AF2E294CC1EE00E70ACB /* MostrandoProtocols.swift */,
+				9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */,
 			);
 			path = Mostrar;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				9E42AF2D294CC1A500E70ACB /* MostrandoConfigurator.swift in Sources */,
 				9E612B62294C2A2800B21D3B /* UltimosData.swift in Sources */,
 				9E612B68294C2D7800B21D3B /* InicioTopsInteractor.swift in Sources */,
+				9E42AF43294CCEFE00E70ACB /* MostrandoInteractor.swift in Sources */,
 				9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */,
 				9E612B60294C29F000B21D3B /* InicioTopsSeriesApi.swift in Sources */,
 				9E612B6F294C34A400B21D3B /* BusquedaTableViewCell.swift in Sources */,

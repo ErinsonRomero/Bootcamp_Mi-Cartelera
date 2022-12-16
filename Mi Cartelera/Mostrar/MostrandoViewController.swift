@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 protocol MostrandoViewControllerProtocol {
-
+    
 }
 
 class MostrandoViewController: UIViewController {
@@ -31,6 +31,10 @@ class MostrandoViewController: UIViewController {
         puntajeLabel.text = "\(presenter!.getVote())/10"
 
 
+    }
+    @IBAction func addSerie(_ sender: UIBarButtonItem) {
+        presenter?.getSerie(presenter!.getName(), presenter?.getPoster(), presenter!.getOverview(), presenter!.getVote(), presenter!.getId())
+        sender.isHidden = true
     }
 }
 

@@ -7,12 +7,13 @@
 
 import Foundation
 protocol MostrandoPresenterProtocol {
-
     func getName() -> String
     func getPoster() -> String?
     func getId() -> String
     func getOverview() -> String
     func getVote() -> Float
+    
+    func getSerie(_ nombre: String, _ imagen: String?, _ trama: String, _ voto: Float, _ id: String)
 }
 
 
@@ -27,6 +28,8 @@ class MostrandoPresenter {
     
     
     var view: MostrandoViewControllerProtocol?
+    var interactor: MostrandoInteractorProtocol?
+    
     
     init(nombre: String, imagen: String?, vote: Float, id: String, overview: String) {
         self.nombre = nombre
@@ -39,6 +42,9 @@ class MostrandoPresenter {
     
 extension MostrandoPresenter: MostrandoPresenterProtocol {
  
+    func getSerie(_ nombre: String, _ imagen: String?, _ trama: String, _ voto: Float, _ id: String) {
+        interactor?.saveSerie(nombre, imagen, trama, voto, id)
+    }
     
     func getName() -> String {
         nombre
