@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import UIKit
 class InicioTopsConfigurator {
-    static func inicioTopsConfiguratorModulo (_ view: InicioTopsViewController) {
+    static func busquedaConfiguratorModulo() -> UIViewController {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: "InicioTopsViewController") as! InicioTopsViewController
         let presenter = InicioTopsPresenter()
         let interactor = InicioTopsInteractor()
         let router = InicioTopsRouter()
@@ -21,5 +25,6 @@ class InicioTopsConfigurator {
         interactor.presenter = presenter
         
         view.presenter = presenter
+        return view
     }
 }
