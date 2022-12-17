@@ -15,11 +15,19 @@ class MostrandoConfigurator {
         let view = storyboard.instantiateViewController(withIdentifier: "MostrandoViewController") as! MostrandoViewController
         
         let presenter = MostrandoPresenter(nombre: modelo.nombre, imagen: modelo.poster, vote: modelo.vote_average, id: String(modelo.id), overview: modelo.overview)
+        let interactor = MostrandoInteractor()
+        
+        
+        presenter.interactor = interactor
         
         presenter.view = view
-       
+        
+        
+        interactor.presenter = presenter
+        
         view.presenter = presenter
         
         return view
     }
 }
+

@@ -18,6 +18,14 @@
 		9E42AF35294CC4FC00E70ACB /* InicioTopsModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */; };
 		9E42AF38294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */; };
 		9E42AF39294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */; };
+		9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */; };
+		9E42AF3F294CCA8100E70ACB /* GuardaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */; };
+		9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */; };
+		9E42AF43294CCEFE00E70ACB /* MostrandoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */; };
+		9E42AF45294CD72D00E70ACB /* GuardaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */; };
+		9E42AF47294CD74100E70ACB /* GuardaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */; };
+		9E42AF49294CDFAF00E70ACB /* GuardaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */; };
+		9E42AF4B294CDFD200E70ACB /* GuardaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */; };
 		9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B45294C1A9900B21D3B /* AppDelegate.swift */; };
 		9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B47294C1A9900B21D3B /* SceneDelegate.swift */; };
 		9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */; };
@@ -51,6 +59,14 @@
 		9E42AF34294CC4FC00E70ACB /* InicioTopsModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTopsModelo.swift; sourceTree = "<group>"; };
 		9E42AF36294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeriesGuardadas+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaViewController.swift; sourceTree = "<group>"; };
+		9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaTableViewCell.swift; sourceTree = "<group>"; };
+		9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaConfigurator.swift; sourceTree = "<group>"; };
+		9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrandoInteractor.swift; sourceTree = "<group>"; };
+		9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaPresenter.swift; sourceTree = "<group>"; };
+		9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaInteractor.swift; sourceTree = "<group>"; };
+		9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaRouter.swift; sourceTree = "<group>"; };
+		9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaModelo.swift; sourceTree = "<group>"; };
 		9E612B42294C1A9900B21D3B /* Mi Cartelera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Cartelera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E612B45294C1A9900B21D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E612B47294C1A9900B21D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +108,7 @@
 				9E42AF2A294CC0D300E70ACB /* MostrandoPresenter.swift */,
 				9E42AF2C294CC1A500E70ACB /* MostrandoConfigurator.swift */,
 				9E42AF2E294CC1EE00E70ACB /* MostrandoProtocols.swift */,
+				9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */,
 			);
 			path = Mostrar;
 			sourceTree = "<group>";
@@ -103,6 +120,20 @@
 				9E42AF37294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9E42AF3B294CC96100E70ACB /* Guardado */ = {
+			isa = PBXGroup;
+			children = (
+				9E42AF3C294CC98B00E70ACB /* GuardaViewController.swift */,
+				9E42AF3E294CCA8100E70ACB /* GuardaTableViewCell.swift */,
+				9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */,
+				9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */,
+				9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */,
+				9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */,
+				9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */,
+			);
+			path = Guardado;
 			sourceTree = "<group>";
 		};
 		9E612B39294C1A9900B21D3B = {
@@ -130,6 +161,7 @@
 				9E612B5C294C1D5200B21D3B /* InicioTops */,
 				9E612B6B294C341200B21D3B /* Busqueda */,
 				9E42AF27294CBF8A00E70ACB /* Mostrar */,
+				9E42AF3B294CC96100E70ACB /* Guardado */,
 				9E612B4B294C1A9900B21D3B /* Main.storyboard */,
 				9E612B51294C1A9900B21D3B /* Assets.xcassets */,
 				9E612B53294C1A9900B21D3B /* LaunchScreen.storyboard */,
@@ -250,15 +282,22 @@
 				9E42AF31294CC28500E70ACB /* BusquedaModelo.swift in Sources */,
 				9E612B50294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld in Sources */,
 				9E612B64294C2B8900B21D3B /* Imagenes.swift in Sources */,
+				9E42AF49294CDFAF00E70ACB /* GuardaRouter.swift in Sources */,
 				9E8FEAAA294CA86D004AC2E3 /* BusquedaPresenter.swift in Sources */,
 				9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */,
 				9E8FEAA8294CA82C004AC2E3 /* BusquedaConfigurator.swift in Sources */,
 				9E42AF33294CC2CA00E70ACB /* BusquedaRouter.swift in Sources */,
+				9E42AF3F294CCA8100E70ACB /* GuardaTableViewCell.swift in Sources */,
+				9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */,
 				9E8FEAA6294CA78C004AC2E3 /* InicioTopsRouter.swift in Sources */,
+				9E42AF47294CD74100E70ACB /* GuardaInteractor.swift in Sources */,
+				9E42AF4B294CDFD200E70ACB /* GuardaModelo.swift in Sources */,
 				9E42AF26294CB08100E70ACB /* BusquedaInteractor.swift in Sources */,
+				9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */,
 				9E42AF2D294CC1A500E70ACB /* MostrandoConfigurator.swift in Sources */,
 				9E612B62294C2A2800B21D3B /* UltimosData.swift in Sources */,
 				9E612B68294C2D7800B21D3B /* InicioTopsInteractor.swift in Sources */,
+				9E42AF43294CCEFE00E70ACB /* MostrandoInteractor.swift in Sources */,
 				9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */,
 				9E612B60294C29F000B21D3B /* InicioTopsSeriesApi.swift in Sources */,
 				9E612B6F294C34A400B21D3B /* BusquedaTableViewCell.swift in Sources */,
@@ -266,6 +305,7 @@
 				9E42AF38294CC80800E70ACB /* SeriesGuardadas+CoreDataClass.swift in Sources */,
 				9E612B66294C2D4B00B21D3B /* InicioTopsPresenter.swift in Sources */,
 				9E42AF24294CB01800E70ACB /* BusquedaSeriesApi.swift in Sources */,
+				9E42AF45294CD72D00E70ACB /* GuardaPresenter.swift in Sources */,
 				9E612B6A294C2E7400B21D3B /* InicioTopsConfigurator.swift in Sources */,
 				9E42AF39294CC80800E70ACB /* SeriesGuardadas+CoreDataProperties.swift in Sources */,
 				9E42AF29294CBFAA00E70ACB /* MostrandoViewController.swift in Sources */,
