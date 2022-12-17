@@ -26,4 +26,8 @@ extension UIImageView {
         guard let url = URL(string: "https://image.tmdb.org/t/p/w600_and_h900_bestv2\(link)") else { return }
         downloaded(from: url, contentMode: mode)
     }
+
+
+
 }
+
