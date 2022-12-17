@@ -60,6 +60,10 @@ extension GuardaViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UISwipeActionsConfiguration(actions: [borrar])
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showSerie(listaSeries[indexPath.row])
+    }
       
 }
 

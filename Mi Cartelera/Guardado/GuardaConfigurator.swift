@@ -14,8 +14,9 @@ class GuardaConfigurator {
         let view = storyboard.instantiateViewController(withIdentifier: "GuardaViewController") as! GuardaViewController
         let presenter = GuardaPresenter()
         let interactor = GuardaInteractor()
-        
-        
+        let router = GuardaRouter()
+        router.view = view
+        presenter.router = router
         presenter.interactor = interactor
         
         presenter.view = view
@@ -24,7 +25,6 @@ class GuardaConfigurator {
         interactor.presenter = presenter
         
         view.presenter = presenter
-        
         return view
     }
 }

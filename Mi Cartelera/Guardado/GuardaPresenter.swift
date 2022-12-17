@@ -13,6 +13,7 @@ protocol GuardaPresenterProtocol {
     //regreso serie
     func setSerie(_ seriesGuardadas: [SeriesGuardadas])
     func removerSerie(_ serie: SeriesGuardadas)
+    func showSerie(_ serie: SeriesGuardadas)
 }
 
 
@@ -23,6 +24,7 @@ class GuardaPresenter {
     
     var view: GuardaViewControllerProtocol?
     var interactor: GuardaInteractorProtocol?
+    var router: GuardaRouterProtocol?
 
     
     
@@ -30,6 +32,10 @@ class GuardaPresenter {
 }
     
 extension GuardaPresenter: GuardaPresenterProtocol {
+    func showSerie(_ serie: SeriesGuardadas) {
+        router?.setSerie(serie)
+    }
+    
     
     func setSerie(_ seriesGuardadas: [SeriesGuardadas]) {
         view?.MandarGuardados(seriesGuardadas)

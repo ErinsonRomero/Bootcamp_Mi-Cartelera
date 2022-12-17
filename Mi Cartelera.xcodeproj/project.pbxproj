@@ -24,6 +24,8 @@
 		9E42AF43294CCEFE00E70ACB /* MostrandoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */; };
 		9E42AF45294CD72D00E70ACB /* GuardaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */; };
 		9E42AF47294CD74100E70ACB /* GuardaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */; };
+		9E42AF49294CDFAF00E70ACB /* GuardaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */; };
+		9E42AF4B294CDFD200E70ACB /* GuardaModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */; };
 		9E612B46294C1A9900B21D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B45294C1A9900B21D3B /* AppDelegate.swift */; };
 		9E612B48294C1A9900B21D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B47294C1A9900B21D3B /* SceneDelegate.swift */; };
 		9E612B4A294C1A9900B21D3B /* InicioTopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E612B49294C1A9900B21D3B /* InicioTopsViewController.swift */; };
@@ -63,6 +65,8 @@
 		9E42AF42294CCEFE00E70ACB /* MostrandoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrandoInteractor.swift; sourceTree = "<group>"; };
 		9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaPresenter.swift; sourceTree = "<group>"; };
 		9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaInteractor.swift; sourceTree = "<group>"; };
+		9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaRouter.swift; sourceTree = "<group>"; };
+		9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardaModelo.swift; sourceTree = "<group>"; };
 		9E612B42294C1A9900B21D3B /* Mi Cartelera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Cartelera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E612B45294C1A9900B21D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E612B47294C1A9900B21D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				9E42AF40294CCAC500E70ACB /* GuardaConfigurator.swift */,
 				9E42AF44294CD72D00E70ACB /* GuardaPresenter.swift */,
 				9E42AF46294CD74100E70ACB /* GuardaInteractor.swift */,
+				9E42AF48294CDFAF00E70ACB /* GuardaRouter.swift */,
+				9E42AF4A294CDFD200E70ACB /* GuardaModelo.swift */,
 			);
 			path = Guardado;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 				9E42AF31294CC28500E70ACB /* BusquedaModelo.swift in Sources */,
 				9E612B50294C1A9900B21D3B /* Mi_Cartelera.xcdatamodeld in Sources */,
 				9E612B64294C2B8900B21D3B /* Imagenes.swift in Sources */,
+				9E42AF49294CDFAF00E70ACB /* GuardaRouter.swift in Sources */,
 				9E8FEAAA294CA86D004AC2E3 /* BusquedaPresenter.swift in Sources */,
 				9E612B5E294C23F200B21D3B /* InicioTopsCollectionViewCell.swift in Sources */,
 				9E8FEAA8294CA82C004AC2E3 /* BusquedaConfigurator.swift in Sources */,
@@ -284,6 +291,7 @@
 				9E42AF3D294CC98B00E70ACB /* GuardaViewController.swift in Sources */,
 				9E8FEAA6294CA78C004AC2E3 /* InicioTopsRouter.swift in Sources */,
 				9E42AF47294CD74100E70ACB /* GuardaInteractor.swift in Sources */,
+				9E42AF4B294CDFD200E70ACB /* GuardaModelo.swift in Sources */,
 				9E42AF26294CB08100E70ACB /* BusquedaInteractor.swift in Sources */,
 				9E42AF41294CCAC500E70ACB /* GuardaConfigurator.swift in Sources */,
 				9E42AF2D294CC1A500E70ACB /* MostrandoConfigurator.swift in Sources */,
