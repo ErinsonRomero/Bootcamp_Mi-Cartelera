@@ -21,15 +21,21 @@ class BusquedaInteractor {
 
 extension BusquedaInteractor: BusquedaInteractorProtocol{
     func getSerie(_ nombreSerie: String) {
-        var text = nombreSerie
-        text = text.replacingOccurrences(of: " ", with: "%20")
-        text = text.replacingOccurrences(of: "¿", with: "%C2%BF")
-        text = text.replacingOccurrences(of: ",", with: "%2C")
-        text = text.replacingOccurrences(of: "?", with: "%3F")
-        text = text.replacingOccurrences(of: "!", with: "%21")
-        print("pidio \(nombreSerie)")
-        busquedaSeriesManager.delegate = self
-        self.busquedaSeriesManager.Tipo(tipo: text)
+        if nombreSerie == "" {
+            self.setSerie(
+            [])
+        } else {
+            var text = nombreSerie
+            text = text.replacingOccurrences(of: " ", with: "%20")
+            text = text.replacingOccurrences(of: "¿", with: "%C2%BF")
+            text = text.replacingOccurrences(of: ",", with: "%2C")
+            text = text.replacingOccurrences(of: "?", with: "%3F")
+            text = text.replacingOccurrences(of: "!", with: "%21")
+            print("pidio \(nombreSerie)")
+            busquedaSeriesManager.delegate = self
+            self.busquedaSeriesManager.Tipo(tipo: text)
+        }
+        
     }
     
     func setSerie(_ nameSerie: [Results]) {

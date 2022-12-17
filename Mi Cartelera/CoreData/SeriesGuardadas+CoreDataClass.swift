@@ -13,3 +13,4 @@ import CoreData
 public class SeriesGuardadas: NSManagedObject {
 
 }
+//aqui puedo customizar con codigo si es que quiero

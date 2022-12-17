@@ -71,10 +71,6 @@ extension BusquedaViewController: UISearchResultsUpdating {
         if let text = searchController.searchBar.text {
             self.presenter?.getSerie(text)
         }
-        if searchController.searchBar.text == "" {
-            busquedaSeries = []
-            busquedaTableview.reloadData()
-        }
     }
 }
 

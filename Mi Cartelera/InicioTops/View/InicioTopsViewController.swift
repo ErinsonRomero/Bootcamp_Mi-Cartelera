@@ -24,7 +24,6 @@ class InicioTopsViewController: UIViewController {
         InicioTopsCollection.delegate = self
         InicioTopsCollection.dataSource = self
         title = "Series Populares"
-//        InicioTopsConfigurator.inicioTopsConfiguratorModulo(self)
         presenter?.getSerie("tv/popular")
     }
     
